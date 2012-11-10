@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-Nov-2012 16:18:38 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ie.cit.teamphoenix.MessageService" table="MESSAGESERVICE">
+        <id name="dpsId" type="int">
+            <column name="DPSID" />
+            <generator class="assigned" />
+        </id>
+        <property name="printed" type="boolean">
+            <column name="PRINTED" />
+        </property>
+        <property name="posted" type="boolean">
+            <column name="POSTED" />
+        </property>
+        <property name="unknown" type="boolean">
+            <column name="UNKNOWN" />
+        </property>
+    </class>
+</hibernate-mapping>

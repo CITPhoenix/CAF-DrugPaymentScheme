@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-Nov-2012 16:18:38 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ie.cit.teamphoenix.Family" table="FAMILY">
+        <id name="familyId" type="int">
+            <column name="FAMILYID" />
+            <generator class="assigned" />
+        </id>
+        <property name="surname" type="java.lang.String">
+            <column name="SURNAME" />
+        </property>
+        <property name="currentAddress" type="java.lang.String">
+            <column name="CURRENTADDRESS" />
+        </property>
+        <property name="previousAddress" type="java.lang.String">
+            <column name="PREVIOUSADDRESS" />
+        </property>
+        <property name="phone" type="java.lang.String">
+            <column name="PHONE" />
+        </property>
+        <property name="dpsId" type="java.lang.String">
+            <column name="DPSID" />
+        </property>
+        <property name="schemeBalance" type="double">
+            <column name="SCHEMEBALANCE" />
+        </property>
+        <property name="registrationRequestDate" type="java.util.GregorianCalendar">
+            <column name="REGISTRATIONREQUESTDATE" />
+        </property>
+        <property name="staffId" type="int">
+            <column name="STAFFID" />
+        </property>
+        <property name="decisionDate" type="java.util.GregorianCalendar">
+            <column name="DECISIONDATE" />
+        </property>
+        <property name="cardValidated" type="boolean">
+            <column name="CARDVALIDATED" />
+        </property>
+        <property name="cardPrinted" type="boolean">
+            <column name="CARDPRINTED" />
+        </property>
+        <property name="cardPosted" type="boolean">
+            <column name="CARDPOSTED" />
+        </property>
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+    </class>
+</hibernate-mapping>

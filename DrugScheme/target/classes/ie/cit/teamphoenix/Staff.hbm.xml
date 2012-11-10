@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-Nov-2012 16:18:38 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ie.cit.teamphoenix.Staff" table="STAFF">
+        <id name="staffId" type="int">
+            <column name="STAFFID" />
+            <generator class="assigned" />
+        </id>
+        <property name="staffName" type="java.lang.String">
+            <column name="STAFFNAME" />
+        </property>
+        <property name="roleId" type="java.lang.String">
+            <column name="ROLEID" />
+        </property>
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+    </class>
+</hibernate-mapping>

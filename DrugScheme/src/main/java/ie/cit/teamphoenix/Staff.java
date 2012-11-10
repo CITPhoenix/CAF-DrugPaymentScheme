@@ -1,6 +1,6 @@
 package ie.cit.teamphoenix;
 
-public class StaffTable {
+public class Staff {
 
 	int staffId;
 	String staffName;
@@ -8,11 +8,11 @@ public class StaffTable {
 	String username;
 	String password;
 	
-	public StaffTable(){
+	public Staff(){
 	}
 	
 	
-	public StaffTable(int staffId, String staffName, String roleId,
+	public Staff(int staffId, String staffName, String roleId,
 			String username, String password) {
 		super();
 		this.staffId = staffId;

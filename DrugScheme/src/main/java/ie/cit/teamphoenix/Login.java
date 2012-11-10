@@ -1,17 +1,17 @@
 package ie.cit.teamphoenix;
 
-public class LoginTable {
+public class Login {
 
 	int LoginId;
 	int familyId;
 	String password;
 	String email;
 	
-	public LoginTable(){
+	public Login(){
 		
 	}
 	
-	public LoginTable(int loginId, int familyId, String password, String email) {
+	public Login(int loginId, int familyId, String password, String email) {
 		super();
 		LoginId = loginId;
 		this.familyId = familyId;

@@ -3,11 +3,21 @@
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.password">2012phoenix</property>
-        <property name="hibernate.connection.url">https://mysql114.000webshost.com</property>
-        <property name="hibernate.connection.username">a8808781_CAFTP</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    </session-factory>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection_pool_size">10</property>
+		<property name="hibernate.connection.password">2012phoenix</property>
+		<property name="hibernate.connection.url">https://mysql114.000webshost.com</property>
+		<property name="hibernate.connection.username">a8808781_CAFTP</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="current_session_context_class">thread</property>
+		<mapping resource="Dependants.hbm.xml" />
+		<mapping resource="Family.hbm.xml" />
+		<mapping resource="GovernmentPPS.hbm.xml" />
+		<mapping resource="Login.hbm.xml" />
+		<mapping resource="MessageService.hbm.xml" />
+		<mapping resource="Pharmacy.hbm.xml" />
+		<mapping resource="RefundRequest.hbm.xml" />
+		<mapping resource="Staff.hbm.xml" />
+	</session-factory>
 </hibernate-configuration>

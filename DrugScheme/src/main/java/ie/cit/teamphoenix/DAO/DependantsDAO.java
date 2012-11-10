@@ -12,7 +12,7 @@ public interface DependantsDAO {
 	
 	void deleteDependant(Dependants dependant);
 	
-	Dependants findDependantByName(String Name);
+	List<Dependants> findDependantByName(String Name);
 	
 	List<Dependants> findDependantsByFamilyId(int familyId);
 	

@@ -12,9 +12,11 @@ public interface FamilyDAO {
 	
 	void deleteFamily(Family family);
 	
-	Family findFamilyByFamilyId(int familyID);
+	List<Family> findFamilyByFamilyId(int familyID);
 	
 	List<Family> findFamilyBySurname(String surname);
+	
+	List<Family> listAllFamilies();
 
 	
 }

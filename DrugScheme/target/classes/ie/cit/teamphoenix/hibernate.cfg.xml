@@ -7,7 +7,7 @@
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="connection_pool_size">10</property>
 		<property name="hibernate.connection.password">2012phoenix</property>
-		<property name="hibernate.connection.url">https://mysql114.000webshost.com</property>
+		<property name="hibernate.connection.url">https://mysql14.000webhost.com</property>
 		<property name="hibernate.connection.username">a8808781_CAFTP</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="current_session_context_class">thread</property>
